@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.withpressoowner.fragment.DetailInfoFragment">
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/detail_info_title_text"
+        style="@style/sign_up_title"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_info"
+        app:layout_constraintBottom_toTopOf="@+id/detail_info_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/detail_info_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- 책상 개수와 크기 -->
+            <TextView
+                android:id="@+id/detail_info_table_text"
+                style="@style/sign_up_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/table_num_and_size" />
+
+            <!--1인석-->
+            <LinearLayout
+                android:id="@+id/detail_info_num_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="3">
+
+                <!--1인석-->
+                <TextView
+                    android:id="@+id/detail_info_seat1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/single_table" />
+
+                <EditText
+                    android:id="@+id/detail_info_seat1_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <!--2인석-->
+                <TextView
+                    android:id="@+id/detail_info_seat2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/couple_seat" />
+
+                <EditText
+                    android:id="@+id/detail_info_seat2_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <!--4인석-->
+                <TextView
+                    android:id="@+id/detail_info_seat4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/quad_seat" />
+
+                <EditText
+                    android:id="@+id/detail_info_seat4_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <!--다인석-->
+                <TextView
+                    android:id="@+id/detail_info_multi_seat_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/multi_seat" />
+
+                <EditText
+                    android:id="@+id/detail_info_multi_seat_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <!-- 책상 크기 -->
+            <LinearLayout
+                android:id="@+id/detail_info_table_size_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_info_table_size_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/table_size" />
+
+                <EditText
+                    android:id="@+id/detail_info_table_size_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="장" />
+            </LinearLayout>
+
+            <!-- 의자  -->
+            <TextView
+                android:id="@+id/detail_info_chair_text"
+                style="@style/sign_up_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/chair_cushion_and_back" />
+
+            <!-- 의자 쿠션감 -->
+            <LinearLayout
+                android:id="@+id/detail_info_chair_cushion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_info_chair_cushion_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/cushion" />
+
+                <EditText
+                    android:id="@+id/detail_info_chair_cushion_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:hint="@string/cushion_example"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- 의자 등받이 유무 -->
+
+            <LinearLayout
+                android:id="@+id/detail_info_chair_back_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_info_chair_back_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/chair_back" />
+
+                <RadioGroup
+                    android:id="@+id/detail_info_chair_back_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- 있어요 -->
+                    <RadioButton
+                        android:id="@+id/detail_info_chair_back_yes_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/chair_back_true" />
+
+                    <!-- 없어요 -->
+                    <RadioButton
+                        android:id="@+id/detail_info_chair_back_no_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/chair_back_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- 콘센트  -->
+            <TextView
+                android:id="@+id/detail_info_outlet_text"
+                style="@style/sign_up_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/total_num_outlet" />
+
+            <LinearLayout
+                android:id="@+id/detail_info_num_outlet_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_info_num_outlet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/num_outlet" />
+
+                <EditText
+                    android:id="@+id/detail_info_num_outlet_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="개" />
+            </LinearLayout>
+
+
+            <!-- 음악 장르  -->
+            <TextView
+                android:id="@+id/detail_info_music_text"
+                style="@style/sign_up_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/cafe_music_genre" />
+
+            <LinearLayout
+                android:id="@+id/detail_info_music_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_info_genre_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/genre" />
+
+                <EditText
+                    android:id="@+id/detail_info_genre_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="16"
+                    android:hint="예) 실시간 인기 차트 Top 100"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <!-- 화장실 -->
+
+            <RadioGroup
+                android:id="@+id/detail_info_restroom_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/detail_info_prev_image"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/prev" />
+
+                <ImageView
+                    android:id="@+id/detail_info_next_image"
+                    android:layout_width="60dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/next" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

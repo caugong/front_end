@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.withpressoowner.fragment.SignUpFragment">
+
+    <TextView
+        android:id="@+id/sign_up_title_text"
+        style="@style/sign_up_title"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="@string/sign_up" />
+
+    <ScrollView
+        android:id="@+id/sign_up_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/sign_up_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!-- id -->
+            <TextView
+                android:id="@+id/sign_up_id_text"
+                style="@style/sign_up_text"
+                android:layout_marginTop="30dp"
+                android:text="@string/id" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sign_up_id_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:ems="13"
+                    android:hint="@string/id_verbose"
+                    android:inputType="text" />
+                <Button
+                    android:id="@+id/sign_up_dup_check_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/log_in_button"
+                    android:text="@string/dup_check"
+                    android:layout_gravity="right"/>
+
+            </LinearLayout>
+
+            <!-- password -->
+            <TextView
+                android:id="@+id/sign_up_pw_text"
+                style="@style/sign_up_text"
+                android:layout_marginTop="30dp"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/sign_up_pw_edit"
+                style="@style/sign_up_edit"
+                android:hint="@string/pw_verbose"
+                android:inputType="textPassword" />
+
+            <!-- password check -->
+            <TextView
+                android:id="@+id/sign_up_pw_check_text"
+                style="@style/sign_up_text"
+                android:layout_marginTop="30dp"
+                android:text="@string/pw_check" />
+
+            <EditText
+                android:id="@+id/sign_up_pw_check_edit"
+                style="@style/sign_up_edit"
+                android:hint="@string/pw_check_verbose"
+                android:inputType="textPassword" />
+
+            <!-- 사장님 성함 -->
+            <TextView
+                android:id="@+id/sign_up_owner_name_text"
+                style="@style/sign_up_text"
+                android:layout_marginTop="30dp"
+                android:text="@string/owner_name" />
+
+            <EditText
+                android:id="@+id/sign_up_owner_name_edit"
+                style="@style/sign_up_edit"
+                android:hint="@string/owner_name_verbose"
+                android:inputType="text" />
+
+            <!-- business number -->
+            <TextView
+                android:id="@+id/sign_up_busi_num_text"
+                style="@style/sign_up_text"
+                android:layout_marginTop="30dp"
+                android:text="@string/busi_num" />
+
+            <EditText
+                android:id="@+id/sign_up_busi_num_edit"
+                style="@style/sign_up_edit"
+                android:hint="@string/busi_num_verbose"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/sign_up_prev_image"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/prev" />
+
+                <ImageView
+                    android:id="@+id/sign_up_next_image"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/next" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
