@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cafe_detail_info_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--congestion-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_congestion_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_congestion_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/congestion" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_congestion_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="congestion information" />
+
+            </LinearLayout>
+            <!--table-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_table_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_table_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/table" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_table_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--chair-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_chair_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_chair_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/chair" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_chair_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--outlet-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_outlet_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_outlet_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/outlet" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_outlet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--music-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_music_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_music_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/music" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_music_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--restroom-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_restroom_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_restroom_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/restroom" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_restroom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--smoking_room-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_smoking_room_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_smoking_room_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/smoking_room" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_smoking_room_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--anti_corona-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_anti_corona_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_anti_corona_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/virus" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_anti_corona_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--cafe_clean-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_cafe_clean_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_cafe_clean_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/clean" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_cafe_clean_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--noise-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_noise_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_noise_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/noise" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_noise_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+            <!--study_well-->
+            <LinearLayout
+                android:id="@+id/info_detail_all_study_well_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/info_detail_all_study_well_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/study" />
+
+                <TextView
+                    android:id="@+id/info_detail_all_study_well_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Table information" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

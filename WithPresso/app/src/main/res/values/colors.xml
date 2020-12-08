@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#403F3F</color>
+    <color name="colorPrimaryDark">#151757</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="kakao">#F1D904</color>
+    <color name="beige">#F3EED9</color>
+    <color name="dark_orange">#ff8c00</color>
+    <color name="purple_navy">#151757</color>
+</resources>

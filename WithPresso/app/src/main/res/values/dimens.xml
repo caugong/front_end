@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_default_margin">4dp</dimen>
+    <dimen name="title_default_padding">4dp</dimen>
+    <dimen name="title_default_size">30sp</dimen>
+    <dimen name="edit_size">24sp</dimen>
+    <dimen name="edit_margin">8dp</dimen>
+    <dimen name="edit_padding">8dp</dimen>
+    <dimen name="button_marginStart">10dp</dimen>
+    <dimen name="button_marginEnd">10dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+
+</resources>
